@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-const shareTitle = 'آخر وظيفة | رواية خيال علمي من القاهرة 2072'
+const shareTitle = 'آخر وظيفة — رواية من القاهرة ٢٠٧٢'
 const shareText =
-  'اكتشفت مشروع «آخر وظيفة»: رواية خيال علمي مصرية عن ثلاث مهام، حياة معلقة، ونظام يفي بوعوده أكثر مما ينبغي.'
+  'تعطّل تبريد العيادة، ولم يبقَ لسلمى إلا أيام قليلة. يعرض مِيزان الدواء على يونس مقابل ثلاث وظائف صيانة.'
 
 export function ShareActions() {
   const [status, setStatus] = useState('')
@@ -10,9 +10,9 @@ export function ShareActions() {
   async function copyLink() {
     try {
       await navigator.clipboard.writeText(window.location.href)
-      setStatus('تم نسخ رابط الرواية.')
+      setStatus('نُسخ رابط الرواية.')
     } catch {
-      setStatus('تعذّر النسخ تلقائيًا. انسخ الرابط من شريط العنوان.')
+      setStatus('تعذّر النسخ تلقائيًا؛ يمكنك نسخ الرابط من شريط العنوان.')
     }
   }
 
@@ -28,12 +28,12 @@ export function ShareActions() {
         text: shareText,
         url: window.location.href,
       })
-      setStatus('تم فتح خيارات المشاركة.')
+      setStatus('فُتحت خيارات المشاركة.')
     } catch (error) {
       if (error instanceof DOMException && error.name === 'AbortError') {
         return
       }
-      setStatus('تعذّرت المشاركة. يمكنك نسخ الرابط بدلًا منها.')
+      setStatus('تعذّر فتح المشاركة؛ يمكنك نسخ الرابط بدلًا من ذلك.')
     }
   }
 
@@ -45,7 +45,7 @@ export function ShareActions() {
           onClick={sharePage}
           className="inline-flex min-h-12 items-center justify-center border border-ink bg-ink px-6 font-display text-sm font-semibold text-paper transition-transform duration-150 hover:-translate-y-0.5 focus-visible:-translate-y-0.5"
         >
-          شارك «آخر وظيفة»
+          أرسل صفحة «آخر وظيفة»
         </button>
         <button
           type="button"

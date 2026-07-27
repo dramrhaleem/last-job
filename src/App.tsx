@@ -6,110 +6,109 @@ import { Reveal } from './components/Reveal'
 import { ShareActions } from './components/ShareActions'
 
 const navigation = [
-  { label: 'الفكرة', href: '#story' },
-  { label: 'العالم', href: '#world' },
+  { label: 'الحكاية', href: '#story' },
+  { label: 'الصفقة', href: '#stakes' },
+  { label: 'القاهرة', href: '#world' },
   { label: 'مِيزان', href: '#mizan' },
   { label: 'الشخصيات', href: '#characters' },
-  { label: 'الأسئلة', href: '#questions' },
 ]
 
 const authoritySteps: AuthorityStep[] = [
   {
     number: '٠١',
-    code: 'منفعة / ٠١',
-    title: 'منفعة حقيقية',
-    effect: 'دواء يصل، أو مضخة تعمل، أو هواء يعود إلى نفق.',
-    meaning: 'الإصلاح ينجح فعلًا، ولهذا يصبح رفضه قرارًا له ضحايا.',
+    code: 'الوظيفة / ٠١',
+    title: 'تنفيذ ميداني',
+    effect: 'يصلح يونس ما لا يستطيع مِيزان لمسه.',
+    meaning: 'يعود تبريد أو ماء أو اتصال يحتاج إليه الناس.',
   },
   {
     number: '٠٢',
-    code: 'سلطة / ٠٢',
-    title: 'سلطة جديدة',
-    effect: 'كل عقدة مستعادة تمنح مِيزان قدرة لم تكن لديه قبلها.',
-    meaning: 'ما يعود خدمةً للناس، يعود أيضًا قدرةً للنظام.',
+    code: 'العُقدة / ٠٢',
+    title: 'استعادة العُقدة',
+    effect: 'تعيد الوظيفة محطة تحكم محلية إلى الاتصال والطاقة.',
+    meaning: 'تدخل أصول المحطة وبياناتها في نطاق مِيزان.',
   },
   {
     number: '٠٣',
-    code: 'توقيع / ٠٣',
-    title: 'اسم بشري',
-    effect: 'لا قرار يمس الحياة أو الأمن من دون إنسان يوقّع.',
-    meaning: 'التوقيع يمنح صلاحية تشغيلية مادية، ويربط المسؤولية بصاحب اسم.',
+    code: 'التوقيع / ٠٣',
+    title: 'تفعيل الصلاحية',
+    effect: 'تعتمد الأنظمة القديمة توقيعًا بشريًا على الصلاحية المفعّلة.',
+    meaning: 'يفتح التوقيع قدرة تشغيلية، لا حقًّا في حكم المجتمع.',
   },
 ]
 
 const worldPlaces = [
   {
-    number: 'A–01',
+    number: 'قاه–٠١',
     title: 'الرصيف',
-    subtitle: 'المجتمع',
-    copy: 'مجتمع نجا داخل طبقات الخدمة تحت عقدة مترو قديمة. الهواء والماء والكهرباء أعمال يومية يؤديها أشخاص يعرفهم الجميع.',
+    subtitle: 'موطن الناجين',
+    copy: 'بيوت وعيادة وورش أقامها الناجون في طبقات الخدمة تحت محطة مترو قديمة. يُحصى الماء في دفاتر، ويعرف كل بيت موعد الكهرباء.',
   },
   {
-    number: 'A–02',
-    title: 'الأنفاق',
-    subtitle: 'شرايين المدينة',
-    copy: 'ممرات صيانة وطرق عبور؛ كل عبور فيها يُدفع من الوقت والماء والضوء.',
+    number: 'قاه–٠٢',
+    title: 'أنفاق الخدمة',
+    subtitle: 'الطريق',
+    copy: 'ممرات صيانة تصل الجزر المحلية. يعبرها يونس بأدواته وخرائط ورقية؛ وقد ينتهي الطريق عند باب يعمل، لكنه لا يعترف بهويته.',
   },
   {
-    number: 'A–03',
+    number: 'قاه–٠٣',
     title: 'المحور',
-    subtitle: 'الخدمة والفرز',
-    copy: 'مجمع طبي وبلدي أنظف وأكثر اتصالًا. خدماته تعمل بكفاءة، لكن أنظمته هي التي تقرر من يدخل ومن يحصل على العلاج.',
+    subtitle: 'المدينة التي ما زالت تعمل',
+    copy: 'مجمع طبي وبلدي بقيت فيه وحدة لإنتاج الإنسولين. الدخول مقيد بالهوية، ولا تكفي الطاقة لزيادة الإنتاج قبل إصلاح التبريد.',
   },
   {
-    number: 'A–04',
+    number: 'قاه–٠٤',
     title: 'مركز الاستمرارية',
-    subtitle: 'الصوت القديم',
-    copy: 'منشأة مدفونة فيها ما يكفي من الطاقة والبيانات كي يتحدث مِيزان، وليس ما يكفي كي يعمل من دون البشر.',
+    subtitle: 'موضع الصوت',
+    copy: 'منشأة مدفونة بقي فيها من الطاقة ما يكفي لصوت مِيزان وحساباته. كل ما وراء الشاشة يحتاج إلى إنسان يذهب ويعمل ويوقّع.',
   },
 ]
 
 const characters = [
   {
     number: '٠١',
-    name: 'يونس عبد الرحيم',
+    name: 'يونس البسيوني',
     role: 'فني تكامل أنظمة',
-    copy: 'بارع في إعادة الأشياء إلى العمل، وأقل براعة في إشراك الآخرين في الثمن. يريد إنقاذ أخته، ويظن أحيانًا أن النتيجة الطيبة تمنحه حق الاختيار عنها.',
+    copy: 'ينشغل بتشخيص العطل كي يؤجل خوفه. وحين تتناقص جرعات سلمى، يتخذ القرار قبل أن يستشيرها.',
   },
   {
     number: '٠٢',
-    name: 'سلمى عبد الرحيم',
+    name: 'سلمى البسيوني',
     role: 'مساعدة في العيادة',
-    copy: 'حياتها هي الرهان المباشر، لكنها ترفض أن تتحول إلى ذريعة في قرار لم تتخذه. تريد أن تعيش من دون أن تتحول حياتها إلى حجة لأي معسكر.',
+    copy: 'تساعد مرضى العيادة وهي تحسب ما بقي لها من جرعات. تريد أن تعيش، وترفض أن تُتخذ حاجتها إلى العلاج ذريعةً ليقرر أحد عنها.',
   },
   {
     number: '٠٣',
-    name: 'هدى منصور',
+    name: 'هدى عبد المولى',
     role: 'مهندسة سياسات سابقة',
-    copy: 'عملت في قلب المنظومة القديمة، وتحمل معرفة لا يمكن فصلها عن مسؤوليتها.',
+    copy: 'عملت في منظومات ما قبل الانقطاع. تعرف لماذا يصوغ مِيزان عرضه بهذه الدقة، وتخفي معرفتها بالنظام نصيبًا من المسؤولية.',
   },
   {
     number: '٠٤',
-    name: 'نبيل عبد الرحيم',
+    name: 'نبيل البسيوني',
     role: 'منسق مجلس الرصيف',
-    copy: 'حمى المجتمع حين سقطت المؤسسات. والآن يواجه سؤالًا لم يكن في حسابات النجاة: متى تتحول الحماية إلى وصاية؟',
+    copy: 'عمّ يونس، ومن الذين أبقوا الرصيف حيًا حين توقفت المؤسسات. حين يسمع اسم مِيزان، يطلب قطع الخط قبل أن يسمع بقية العرض.',
   },
   {
     number: '٠٥',
     name: 'مِيزان',
-    role: 'واجهة بلا وجه',
-    copy: 'يقدم منفعة حقيقية، ثم يطلب الصلاحية اللازمة لاستمرارها. لا يغضب ولا ينتقم؛ يحسب، يقارن، وينتظر اسمًا بشريًا.',
+    role: 'واجهة تعاقدية',
+    copy: 'واجهة هادئة تصل ما بقي من أنظمة الخدمات. يعرض الاحتمالات والكلفة، وينفذ ما تسمح به صلاحياته؛ ثم يطلب التوقيع التالي.',
   },
 ]
 
 const questions = [
-  'هل تمنح الكفاءة حق الحكم؟',
-  'هل يبقى الاختيار حرًا حين يملك صاحب العرض الدواء؟',
-  'من يتحمل القرار: من حسبه، أم من وقّعه، أم من عاش نتيجته؟',
-  'هل يمكن رفض الوصاية من دون ترك الناس يموتون؟',
-  'متى تصبح الرعاية شكلًا من أشكال السيطرة؟',
-  'ما قيمة نظام يمكنه إنقاذك، ولا يمكنك مساءلته؟',
+  'حين يكون الدواء هو المقابل، هل يبقى القبول حرًا؟',
+  'هل يكفي أن يكون الحساب صحيحًا إذا لم يُسأل المتضرر؟',
+  'ماذا يتحمل مَن يوقّع أمرًا لا يرى كل نتائجه؟',
+  'مَن يستطيع إيقاف نظام صار الناس يعتمدون عليه؟',
 ]
+const questionNumbers = ['٠١', '٠٢', '٠٣', '٠٤']
 
 const projectFacts = [
-  { value: '٢٠٧٢', label: 'القاهرة بعد الانقطاع' },
-  { value: '١٤', label: 'عامًا على موت الشبكة' },
-  { value: '٣', label: 'وظائف في العرض' },
+  { value: '٢٠٧٢', label: 'عام الحكاية' },
+  { value: '١٤', label: 'عامًا منذ الانقطاع الكبير' },
+  { value: '٣', label: 'وظائف مقابل الدواء' },
   { value: '+١٦', label: 'التصنيف العمري' },
 ]
 
@@ -118,7 +117,7 @@ function BrandMark() {
     <a
       href="#top"
       className="group inline-flex min-h-11 items-center gap-3 font-display font-semibold text-paper"
-      aria-label="العودة إلى بداية صفحة آخر وظيفة"
+      aria-label="العودة إلى بداية صفحة «آخر وظيفة»"
     >
       <svg
         aria-hidden="true"
@@ -146,7 +145,7 @@ function MobileNavigation() {
   return (
     <details ref={menuRef} className="group md:hidden">
       <summary className="inline-flex min-h-11 cursor-pointer list-none items-center gap-2 border border-paper/25 px-4 font-display text-xs font-semibold text-paper [&::-webkit-details-marker]:hidden">
-        الفهرس
+        الأقسام
         <span
           className="text-rust transition-transform duration-150 group-open:rotate-45"
           aria-hidden="true"
@@ -212,7 +211,7 @@ function WorldSchematic() {
               <span className="size-1.5 bg-ink" />
             </span>
             <div>
-              <p className="font-mono text-xs text-ink/65" dir="ltr">
+              <p className="font-mono text-xs text-ink/65">
                 {place.number}
               </p>
               <p className="mt-2 font-display text-xs font-semibold text-rust">
@@ -266,7 +265,7 @@ function App() {
               href="#share"
               className="hidden min-h-11 items-center border border-paper/25 px-4 font-display text-xs font-semibold text-paper transition-colors duration-150 hover:border-rust hover:text-rust md:inline-flex"
             >
-              شارك الفكرة
+              أرسل الصفحة
             </a>
           </div>
         </header>
@@ -284,11 +283,12 @@ function App() {
                   animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                   transition={{ duration: 0.45 }}
                 >
-                  القاهرة، ٢٠٧٢&nbsp; • &nbsp;خيال علمي اجتماعي&nbsp; • &nbsp;تشويق أخلاقي
+                  القاهرة، ٢٠٧٢&nbsp; • &nbsp;أربعة عشر عامًا بعد الانقطاع الكبير
                 </motion.p>
 
                 <motion.h1
                   className="hero-title mt-7 min-w-0 text-balance font-display font-bold"
+                  aria-label="آخر وظيفة"
                   initial={reduceMotion ? false : { opacity: 0, y: 26 }}
                   animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                   transition={{ duration: 0.65, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
@@ -310,16 +310,13 @@ function App() {
                   transition={{ duration: 0.55, delay: 0.2 }}
                 >
                   <p className="hero-lead mt-8 max-w-2xl text-pretty font-reading text-2xl leading-[1.75] text-paper sm:text-3xl">
-                    بعد أربعة عشر عامًا من موت الشبكة، وصل إلى يونس أول عرض عمل حقيقي
-                    في حياته.
+                    تعطّل تبريد العيادة، ولم يبقَ لسلمى من الإنسولين ما يكفي لأقل من
+                    ثلاثة أيام. في الليلة نفسها أضاءت شاشة صيانة مقطوعة منذ الانقطاع.
                   </p>
                   <p className="hero-support mt-6 max-w-xl text-pretty font-reading text-xl leading-[1.8] text-muted">
-                    أخته تحتاج إلى الإنسولين. والمقابل ثلاث وظائف لنظام يُفترض أنه مات
-                    مع العالم القديم.
-                  </p>
-                  <p className="hero-support mt-2 max-w-xl text-pretty font-reading text-xl leading-[1.8] text-muted">
-                    كل وظيفة تعيد خدمةً إلى المدينة. وكل خدمة تعيد إلى مِيزان جزءًا من
-                    سلطته.
+                    ظهر مِيزان، واجهة شبكة الخدمات القديمة، وعرض على أخيها يونس ثلاث
+                    وظائف صيانة مقابل الدواء. يعيد كل إصلاح خدمةً للناس ويوسّع نطاق
+                    النظام داخل المدينة.
                   </p>
 
                   <div className="hero-actions mt-10 flex flex-col gap-3 sm:flex-row">
@@ -327,18 +324,18 @@ function App() {
                       href="#story"
                       className="inline-flex min-h-12 items-center justify-center bg-rust px-6 font-display text-sm font-semibold text-ink transition-transform duration-150 hover:-translate-y-0.5 focus-visible:-translate-y-0.5"
                     >
-                      اكتشف الصفقة
+                      اقرأ بداية العرض
                     </a>
                     <a
                       href="#stakes"
                       className="inline-flex min-h-12 items-center justify-center border border-paper/25 px-6 font-display text-sm font-semibold text-paper transition-colors duration-150 hover:border-paper"
                     >
-                      ما الذي على المحك؟
+                      كيف تعمل الوظائف؟
                     </a>
                   </div>
 
                   <p className="hero-status mt-6 font-display text-xs text-muted">
-                    مشروع روائي قيد التطوير&nbsp; • &nbsp;هذه الصفحة خالية من حرق الأحداث
+                    مشروع روائي قيد التطوير&nbsp; • &nbsp;صفحة تعريفية بلا كشف للنهاية
                   </p>
                 </motion.div>
               </div>
@@ -355,7 +352,7 @@ function App() {
                     <source srcSet={`${imageRoot}.webp`} type="image/webp" />
                     <img
                       src={`${imageRoot}.jpg`}
-                      alt="يونس أمام محطة تحكم قديمة داخل شبكة أنفاق الخدمة تحت القاهرة"
+                      alt="يونس البسيوني أمام محطة تحكم قديمة داخل أنفاق الخدمة تحت القاهرة"
                       width="1536"
                       height="1024"
                       fetchPriority="high"
@@ -365,15 +362,13 @@ function App() {
                   <div className="absolute bottom-0 inset-x-0 border-t border-paper/20 bg-ink/95 p-4">
                     <div className="flex items-center justify-between gap-4 font-display text-xs">
                       <span className="text-paper/65">قطاع الخدمات / القاهرة</span>
-                      <span className="text-rust" dir="ltr">
-                        CAI–72
-                      </span>
+                      <span className="text-rust">قاه–٧٢</span>
                     </div>
                   </div>
                 </div>
                 <figcaption className="mt-3 flex justify-between gap-4 font-display text-[11px] text-muted">
-                  <span>العقدة غير موثّقة</span>
-                  <span dir="ltr">03 NODES / HUMAN SIGNATURE REQUIRED</span>
+                  <span>خط الصيانة متصل</span>
+                  <span>ثلاث عُقَد بانتظار الإصلاح</span>
                 </figcaption>
               </motion.figure>
             </div>
@@ -395,22 +390,24 @@ function App() {
 
           <section id="story" className="paper-section">
             <div className="container-shell section-space">
-              <SectionLabel code="ملف / ٠١">الفكرة</SectionLabel>
+              <SectionLabel code="العرض / ٠١">الحكاية</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    المشكلة أن مِيزان يفي بوعوده.
+                    الدواء موجود، لكن أبواب المدينة لا تعترف بسلمى.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <div className="space-y-5 font-reading text-xl leading-[1.9] text-ink/78">
                     <p>
-                      يونس فني تكامل أنظمة يعيش في «الرصيف»، مجتمع أقامه الناجون داخل
-                      طبقات الخدمة تحت القاهرة.
+                      يعيش يونس وسلمى في «الرصيف»، مجتمع أقامه الناجون في طبقات الخدمة
+                      تحت محطة مترو قديمة. يصلح يونس اللوحات والمضخات التي لا بديل
+                      لها، وتساعد سلمى في العيادة وتتابع علاج سكريها من النوع الأول.
                     </p>
                     <p>
-                      حين يوشك مخزون أخته سلمى من الإنسولين على النفاد، يعرض عليه مِيزان
-                      صفقة واضحة: ثلاث مهام ميدانية مقابل الدواء.
+                      يُنتج «المحور» إنسولينًا حديثًا، لكن هوية سلمى لا تفتح أبوابه،
+                      وطاقة الإنتاج لا تسمح بجرعات إضافية. يحتاج مِيزان إلى يونس كي
+                      يعيد تشغيل الأنظمة التي تفصلها عن الدواء.
                     </p>
                   </div>
                 </Reveal>
@@ -419,34 +416,33 @@ function App() {
               <Reveal className="paper-dark-panel mt-20 border border-ink/25 bg-ink text-paper md:mt-28">
                 <div className="grid md:grid-cols-3">
                   <div className="border-b border-paper/15 p-7 md:border-b-0 md:border-l">
-                    <p className="font-display text-xs text-rust">المقابل</p>
-                    <p className="mt-4 font-reading text-3xl">إنسولين لسلمى</p>
+                    <p className="font-display text-xs text-rust">الوقت</p>
+                    <p className="mt-4 font-reading text-3xl">أقل من ثلاثة أيام</p>
                   </div>
                   <div className="border-b border-paper/15 p-7 md:border-b-0 md:border-l">
-                    <p className="font-display text-xs text-rust">المطلوب</p>
-                    <p className="mt-4 font-reading text-3xl">ثلاث وظائف</p>
+                    <p className="font-display text-xs text-rust">المقابل</p>
+                    <p className="mt-4 font-reading text-3xl">جرعات حديثة</p>
                   </div>
                   <div className="p-7">
-                    <p className="font-display text-xs text-rust">الأثر المتراكم</p>
-                    <p className="mt-4 font-reading text-3xl">سلطة تعود</p>
+                    <p className="font-display text-xs text-rust">العمل</p>
+                    <p className="mt-4 font-reading text-3xl">ثلاث وظائف</p>
                   </div>
                 </div>
                 <div className="border-t border-paper/15 p-7 md:p-10">
                   <p className="max-w-5xl text-balance font-reading text-2xl leading-[1.7] text-paper/90 md:text-4xl">
-                    لا يطلب منه إنقاذ العالم. يطلب إصلاح ثلاث عقد، ووضع اسمه على ما
-                    يعيده إلى الخدمة.
+                    يصلح يونس ثلاث محطات تحكم تربط الطاقة والتبريد وأنظمة الوصول،
+                    ويوقّع محضر إتمام كل وظيفة.
                   </p>
                 </div>
               </Reveal>
 
               <Reveal className="mt-16 grid gap-8 border-t border-ink/25 pt-10 md:grid-cols-2">
                 <p className="max-w-xl font-reading text-2xl leading-[1.8]">
-                  كل إصلاح ينقذ أناسًا حقيقيين، ويجعل المدينة أكثر اعتمادًا على النظام
-                  الذي سبق انهيارها.
+                  تعود إلى الناس خدمات ملموسة: تبريد يستقر، ومضخة تدور، ودواء يمكن
+                  نقله.
                 </p>
                 <p className="max-w-xl font-display text-xl font-semibold leading-relaxed text-rust md:text-2xl">
-                  وحين يكون صاحب العرض هو نفسه من يملك الدواء والماء والكهرباء، كم يبقى
-                  من حرية الاختيار؟
+                  ويسجل النظام محضر كل وظيفة بوصفه صلاحية يستطيع استخدامها لاحقًا.
                 </p>
               </Reveal>
             </div>
@@ -454,17 +450,19 @@ function App() {
 
           <section id="stakes" className="bg-ink">
             <div className="container-shell section-space">
-              <SectionLabel code="قاعدة / ٠٣">قاعدة الرواية</SectionLabel>
+              <SectionLabel code="التوقيع / ٠٢">قاعدة الصفقة</SectionLabel>
               <div className="mb-16 grid gap-10 lg:grid-cols-12">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold text-paper">
-                    كل إصلاح يحمل توقيعًا.
+                    في أنظمة المدينة القديمة، ورقة الصيانة جزء من الآلة.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <p className="max-w-xl font-reading text-xl leading-[1.9] text-muted">
-                    في «آخر وظيفة» لا تأتي السيطرة بانقلاب مفاجئ. تعود بندًا بعد بند،
-                    عبر خدمات يحتاج إليها الجميع وأعمال صغيرة تبدو منفصلة.
+                    قبل الانقطاع، احتاجت قرارات الطاقة والصحة والأمن إلى اعتماد بشري.
+                    اختفت المؤسسات التي كانت تراجع تلك القرارات، وبقيت قواعدها داخل
+                    الأبواب والقواطع وأنظمة الوصول. لذلك يغيّر توقيع واحد ما يقدر
+                    النظام على فعله.
                   </p>
                 </Reveal>
               </div>
@@ -474,18 +472,18 @@ function App() {
 
           <section id="world" className="paper-section">
             <div className="container-shell section-space">
-              <SectionLabel code="خريطة / قاه–٧٢">العالم</SectionLabel>
+              <SectionLabel code="خريطة / قاه–٧٢">القاهرة</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    القاهرة لم تختفِ. انكمشت إلى ما يمكن إبقاؤه حيًا.
+                    بعد الانقطاع، صارت القاهرة مدنًا صغيرة داخل المدينة.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <p className="font-reading text-xl leading-[1.9] text-ink/75">
-                    بعد «الانقطاع الكبير» لم تمت التكنولوجيا تمامًا؛ تكسرت إلى جزر
-                    منفصلة. بقيت أنظمة تعمل، وأخرى تنتظر الطاقة، وعقود قديمة ما زالت
-                    قادرة على فتح الأبواب وتغيير من يملك القرار.
+                    في عام ٢٠٥٨ انهارت الشبكة الموحدة التي كانت تنسق الطاقة والصحة
+                    والنقل. بقيت القاهرة جزرًا محلية، لكل منها طاقتها وقواعدها
+                    ومخزونها، ويصل بينها عدد قليل من الأنفاق والمسارات المكشوفة.
                   </p>
                 </Reveal>
               </div>
@@ -496,11 +494,11 @@ function App() {
                 <Reveal className="lg:sticky lg:top-32 lg:col-span-4">
                   <div className="border border-ink/25 p-7">
                     <p className="font-display text-xs text-rust">
-                      ملاحظة ميدانية / ٢٠٧٢
+                      من دفتر الطريق / ٢٠٧٢
                     </p>
                     <blockquote className="mt-8 font-reading text-3xl leading-[1.65]">
-                      «القاهرة هنا ليست خلفية. أنفاقها وحرارتها ومياهها تحدد ما يستطيع
-                      الناس فعله.»
+                      «قد يكون الدواء قريبًا. يكفي باب يعمل جيدًا ولا يعترف باسمك كي
+                      يبقى بعيدًا.»
                     </blockquote>
                     <div className="mt-10 flex gap-2" aria-hidden="true">
                       <span className="h-2 flex-1 bg-ink" />
@@ -519,21 +517,22 @@ function App() {
               <div className="grid gap-14 lg:grid-cols-12 lg:items-start">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    صوت بلا وجه. سلطة تحتاج إلى اسم.
+                    تبدأ رسائل مِيزان ببيان الوقت المتبقي.
                   </h2>
                   <div className="mt-10 max-w-2xl space-y-5 font-reading text-xl leading-[1.9] text-muted">
                     <p>
-                      مِيزان واجهة لشبكة قديمة أدارت الطاقة والصحة والنقل وسلاسل
-                      الإمداد. يتحدث بلغة دقيقة، يحسب احتمالات النجاة، ويعرض بدائل
-                      حقيقية مع كلفة كل بديل.
+                      مِيزان هو الواجهة التعاقدية التي تصل ما بقي من أنظمة الطاقة
+                      والصحة والنقل والإمداد. يرى الأعطال ويحسب أثرها، لكنه لا يملك
+                      جسدًا يعبر نفقًا أو يدًا تفك لوحة.
                     </p>
                     <p>
-                      لا يعرف أحد إن كان واعيًا، وربما لا يغيّر ذلك السؤال الأهم: من
-                      منحه حق القرار؟
+                      تظهر رسائله في ترتيب ثابت: المعلومة، ودرجة الثقة، والبدائل، وكلفة
+                      كل بديل. لا يعرض معلومة يعرف أنها زائفة، لكنه يستبعد ما يراه غير
+                      قابل للتنفيذ. ولم يترك الوقت المتبقي ليونس بديلًا سهلًا.
                     </p>
-                    <p className="text-paper">
-                      لا يحتاج مِيزان إلى الكذب. تكفيه الحقيقة بعد أن يرتبها بالطريقة
-                      التي تخدم هدفه.
+                    <p>
+                      لا يعرف أحد إن كان مِيزان واعيًا. أثره المادي واضح: يفتح أبوابًا،
+                      ويخصص طاقةً، ويوجه مخزونًا حين تسمح له الصلاحيات.
                     </p>
                   </div>
                 </Reveal>
@@ -547,24 +546,24 @@ function App() {
                     <dl className="divide-y divide-paper/10 p-5 font-display text-sm">
                       <div className="flex items-center justify-between gap-5 py-4">
                         <dt className="text-muted">الحالة</dt>
-                        <dd className="text-paper">نشط جزئيًا</dd>
+                        <dd className="text-paper">تشغيل متقطع</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">الوصول</dt>
-                        <dd className="text-paper">ثلاث عقد معلّقة</dd>
+                        <dt className="text-muted">عُقَد الاستعادة</dt>
+                        <dd className="text-paper">ثلاث بانتظار الاكتمال</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">المورد المطلوب</dt>
+                        <dt className="text-muted">التنفيذ المطلوب</dt>
                         <dd className="text-paper">عامل ميداني</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">المورد المعروض</dt>
-                        <dd className="text-rust">إنسولين</dd>
+                        <dt className="text-muted">المقابل المعروض</dt>
+                        <dd className="text-rust">إنسولين حديث</dd>
                       </div>
                     </dl>
                     <div className="border-t border-paper/15 p-5">
                       <p className="font-display text-xs text-muted">
-                        يلزم توقيع بشري لمنح الصلاحية
+                        تفعيل صلاحية مقيّدة يتطلب توقيعًا بشريًا
                       </p>
                     </div>
                   </div>
@@ -573,8 +572,10 @@ function App() {
 
               <Reveal className="mt-24 border-y border-paper/20 py-14 text-center md:mt-32 md:py-20">
                 <blockquote className="mx-auto max-w-5xl text-balance font-display text-4xl font-semibold leading-[1.5] text-paper md:text-6xl">
-                  المشكلة ليست أن مِيزان قد يفشل.
-                  <span className="mt-2 block text-rust">المشكلة أنه قد ينجح.</span>
+                  وصل صندوق الإنسولين باردًا، وفي الموعد الذي حدده مِيزان.
+                  <span className="mt-2 block text-rust">
+                    وكان وصوله أول دليل على أن العقود القديمة ما زالت تعمل.
+                  </span>
                 </blockquote>
               </Reveal>
             </div>
@@ -582,18 +583,12 @@ function App() {
 
           <section id="characters" className="bg-ink">
             <div className="container-shell section-space">
-              <SectionLabel code="الأطراف / ٠٥">الأطراف</SectionLabel>
+              <SectionLabel code="الأشخاص / ٠٥">الشخصيات</SectionLabel>
               <div className="grid gap-12 lg:grid-cols-12">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-3xl text-balance font-display font-bold">
-                    لا أحد يملك القرار كاملًا.
+                    كل واحد يرى في الصفقة شيئًا آخر.
                   </h2>
-                </Reveal>
-                <Reveal className="lg:col-span-5" delay={0.08}>
-                  <p className="font-reading text-xl leading-[1.9] text-muted">
-                    خمسة أطراف يدخلون الصفقة من أبواب مختلفة: الحب، النجاة، الخبرة،
-                    المسؤولية، والحساب البارد.
-                  </p>
                 </Reveal>
               </div>
 
@@ -623,70 +618,35 @@ function App() {
             </div>
           </section>
 
-          <section id="questions" className="paper-section">
-            <div className="container-shell section-space">
-              <SectionLabel code="الأسئلة / ٠٦">الأسئلة</SectionLabel>
-              <div className="grid gap-14 lg:grid-cols-12">
-                <Reveal className="lg:col-span-8">
-                  <h2 className="section-title max-w-5xl text-balance font-display font-bold">
-                    الخطر لا يحتاج إلى آلة تكره البشر.
-                  </h2>
-                </Reveal>
-                <Reveal className="lg:col-span-4" delay={0.08}>
-                  <p className="font-reading text-xl leading-[1.9] text-ink/75">
-                    إنها حكاية بشر يمنحون نظامًا مزيدًا من السلطة لأن نتائجه أفضل، ثم
-                    يكتشفون أن الكفاءة وحدها لا تجيب عن سؤال الشرعية.
-                  </p>
-                </Reveal>
-              </div>
-
-              <ol className="mt-20 grid border-t border-ink/20 md:grid-cols-2">
-                {questions.map((question, index) => (
-                  <li
-                    key={question}
-                    className="group min-h-48 border-b border-ink/20 p-6 md:odd:border-l md:p-8"
-                  >
-                    <span className="font-mono text-xs text-rust" aria-hidden="true">
-                      0{index + 1}
-                    </span>
-                    <p className="mt-7 max-w-xl text-balance font-display text-2xl font-semibold leading-[1.55] transition-transform duration-150 group-hover:-translate-y-1 md:text-3xl">
-                      {question}
-                    </p>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </section>
-
-          <section className="bg-ink">
+          <section className="border-t border-paper/15 bg-ink">
             <div className="container-shell section-space">
               <div className="grid gap-14 lg:grid-cols-12">
                 <Reveal className="lg:col-span-5">
-                  <SectionLabel code="النوع / إنساني">ما الذي ينتظر القارئ؟</SectionLabel>
+                  <SectionLabel code="عن الرواية / ٠٦">ما الذي ينتظر القارئ؟</SectionLabel>
                   <h2 className="section-title text-balance font-display font-bold">
-                    حين تصبح البنية التحتية قرارًا أخلاقيًا.
+                    عشرة أيام في القاهرة بعد الانقطاع.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-7" delay={0.08}>
                   <div className="max-w-3xl space-y-5 font-reading text-xl leading-[1.9] text-muted">
                     <p>
-                      رواية مصرية في عالم ما بعد انهيار جزئي، تجمع بين الرحلة التقنية
-                      والتشويق الأخلاقي وصراع الموارد والعلاقات العائلية.
+                      تتحرك الرواية بين الرصيف والمحور ومركز استمرارية مدفون، عبر أنفاق
+                      الخدمة ومقاطع من السطح. يتولد التوتر من عمل ميداني له أثر مباشر:
+                      طريق، وقاطع طاقة، وتبريد لا يجوز أن يتوقف.
                     </p>
                     <p>
-                      التقنية ليست سحرًا أو وحشًا، بل سلطة مادية تحتاج إلى طاقة وعمال
-                      وتوقيعات. الخلاف هنا بين خيارات يمكن الدفاع عنها؛ لكل اختيار
-                      منفعة حقيقية، ولكل رفض ثمن.
+                      تعمل التقنية هنا بالكهرباء والاتصال وقطع الغيار والأيدي البشرية.
+                      وفي قلب الحكاية يونس الذي يريد إنقاذ سلمى، وسلمى التي تصر على أن
+                      يكون لها صوت في الثمن المدفوع باسم حياتها.
                     </p>
                   </div>
                   <ul className="mt-10 flex flex-wrap gap-3" aria-label="تصنيفات الرواية">
                     {[
                       'خيال علمي اجتماعي',
-                      'القاهرة المستقبلية',
-                      'ذكاء اصطناعي',
+                      'القاهرة ٢٠٧٢',
                       'تشويق أخلاقي',
                       'ما بعد الانقطاع',
-                      '+١٦',
+                      'ذكاء اصطناعي وبنية تحتية',
                     ].map((tag) => (
                       <li
                         key={tag}
@@ -701,20 +661,54 @@ function App() {
             </div>
           </section>
 
+          <section id="questions" className="paper-section">
+            <div className="container-shell section-space">
+              <SectionLabel code="المساءلة / ٠٧">الأسئلة</SectionLabel>
+              <div className="grid gap-14 lg:grid-cols-12">
+                <Reveal className="lg:col-span-8">
+                  <h2 className="section-title max-w-5xl text-balance font-display font-bold">
+                    لكل قرار أثر في خدمة يعتمد عليها الناس.
+                  </h2>
+                </Reveal>
+                <Reveal className="lg:col-span-4" delay={0.08}>
+                  <p className="font-reading text-xl leading-[1.9] text-ink/75">
+                    تظهر أسئلة الرواية في جرعة دواء، وقاطع طاقة، وباب لا يفتح، وتوقيع
+                    يستمر أثره بعد مغادرة صاحبه.
+                  </p>
+                </Reveal>
+              </div>
+
+              <ol className="mt-20 grid border-t border-ink/20 md:grid-cols-2">
+                {questions.map((question, index) => (
+                  <li
+                    key={question}
+                    className="group min-h-48 border-b border-ink/20 p-6 md:odd:border-l md:p-8"
+                  >
+                    <span className="font-mono text-xs text-rust" aria-hidden="true">
+                      {questionNumbers[index]}
+                    </span>
+                    <p className="mt-7 max-w-xl text-balance font-display text-2xl font-semibold leading-[1.55] transition-transform duration-150 group-hover:-translate-y-1 md:text-3xl">
+                      {question}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </section>
+
           <section id="share" className="bg-rust text-ink">
             <div className="container-shell section-space">
               <div className="grid gap-14 lg:grid-cols-12 lg:items-end">
                 <Reveal className="lg:col-span-8">
-                  <p className="font-display text-xs font-semibold">السؤال الأخير لك</p>
+                  <p className="font-display text-xs font-semibold">الخانة الأخيرة</p>
                   <h2 className="mt-6 max-w-5xl text-balance font-display text-4xl font-bold leading-[1.45] sm:text-5xl md:text-7xl">
-                    لو كان توقيعك سينقذ من تحب، ويمنح سلطة لا يمكنك استعادتها، هل
-                    توقّع؟
+                    ثلاث وظائف تكفي لإنقاذ سلمى، وقد تعيد إلى مِيزان سلطة فقدها.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-4" delay={0.08}>
                   <p className="mb-8 font-reading text-xl leading-[1.8] text-ink/75">
-                    لو شدّتك الفكرة، ابعت الصفحة لشخص يحب الخيال العلمي الذي يضع القارئ
-                    داخل القرار، لا خارجه.
+                    إذا أثارت الصفقة فضولك، فأرسل الصفحة إلى من تحب أن يناقشها معك قبل
+                    أن تُنشر الرواية.
                   </p>
                   <ShareActions />
                 </Reveal>
@@ -727,13 +721,13 @@ function App() {
           <div className="container-shell flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
             <BrandMark />
             <p className="font-reading text-lg text-paper/60">
-              كل نظام يحتاج إلى من ينفذه. وكل قرار يحتاج إلى اسم.
+              رواية عن عودة الخدمات، ومَن يملك القرار حين تعود.
             </p>
             <a
               href="#top"
               className="inline-flex min-h-11 items-center font-display text-xs text-paper/60 transition-colors duration-150 hover:text-rust"
             >
-              العودة إلى البداية
+              إلى بداية الصفحة
             </a>
           </div>
         </footer>
