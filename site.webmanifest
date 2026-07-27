@@ -1,0 +1,19 @@
+{
+  "name": "آخر وظيفة",
+  "short_name": "آخر وظيفة",
+  "description": "رواية خيال علمي من القاهرة 2072",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0d0c",
+  "theme_color": "#0b0d0c",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
