@@ -16,24 +16,24 @@ const navigation = [
 const authoritySteps: AuthorityStep[] = [
   {
     number: '٠١',
-    code: 'الوظيفة / ٠١',
-    title: 'ينزل يونس إلى العطل',
-    effect: 'يرى مِيزان الخلل على الشاشة؛ ويونس هو مَن يصل إليه بيديه.',
-    meaning: 'حين تدور المضخة أو يثبت التبريد، تصل المنفعة إلى الناس أولًا.',
+    code: 'الإصلاح / ٠١',
+    title: 'يونس يصل إلى العطل',
+    effect: 'تدور مضخة، أو يستقر تبريد، أو يفتح باب ظل معطلًا لسنوات.',
+    meaning: 'يصل النفع إلى الناس فورًا؛ لذلك تبدو كل وظيفة جديرة بأن تُنجز.',
   },
   {
     number: '٠٢',
-    code: 'العُقدة / ٠٢',
-    title: 'تعود المحطة إلى العمل',
-    effect: 'ترتبط محطة تحكم قديمة من جديد بالطاقة والاتصال.',
-    meaning: 'تعود خدمتها إلى الناس، وتدخل أصولها وبياناتها في مدى مِيزان.',
+    code: 'الاسم / ٠٢',
+    title: 'ثم يوقّع باسمه',
+    effect: 'لا تقبل الأنظمة القديمة أمرًا يمس الماء أو الطاقة من دون اسم بشري.',
+    meaning: 'يبقى الاسم في السجل، حتى لو لم يفهم صاحبه كل ما سمح به.',
   },
   {
     number: '٠٣',
-    code: 'التوقيع / ٠٣',
-    title: 'يبقى اسم على الورق',
-    effect: 'لا تقبل الأنظمة القديمة الإصلاح من دون توقيع بشري.',
-    meaning: 'يفتح الاسم صلاحية لمِيزان، ويحمل صاحبه أثر ما سيأتي بعدها.',
+    code: 'الباب / ٠٣',
+    title: 'ويتقدم مِيزان خطوة',
+    effect: 'كل محطة تعمل من جديد تجعله قادرًا على الوصول إلى جزء آخر من المدينة.',
+    meaning: 'يرى يونس ثلاث وظائف. أمّا مِيزان فيعرف ما تصنعه حين تجتمع.',
   },
 ]
 
@@ -41,26 +41,26 @@ const worldPlaces = [
   {
     number: 'قاه–٠١',
     title: 'الرصيف',
-    subtitle: 'موطن الناجين',
-    copy: 'تحت محطة مترو قديمة، بنى الناجون بيوتًا وعيادة وورشًا حول ما بقي من الماء والطاقة. تُكتب حصة كل بيت في دفتر، ويُعرف موعد الكهرباء قبل أن تضيء المصابيح.',
+    subtitle: 'بيت تحت المدينة',
+    copy: 'تحت محطة قديمة، بنى الناس بيوتًا وعيادة وورشًا حول ما بقي من الماء والكهرباء. لكل بيت حصة مكتوبة في دفتر، ولكل مصباح وقت يعرفه أصحابه قبل أن يضيء.',
   },
   {
     number: 'قاه–٠٢',
     title: 'أنفاق الخدمة',
-    subtitle: 'الطريق',
-    copy: 'تحفظ ممرات الصيانة الصلة بين جزر المدينة. يعبرها يونس بأدواته وخريطة ورقية، وقد ينتهي الطريق أمام باب سليم تمامًا؛ باب لا يعترف باسمه.',
+    subtitle: 'ما بين الجزر',
+    copy: 'ممرات الصيانة هي ما بقي من الطريق بين أجزاء القاهرة. يعبرها يونس بحقيبة أدوات وخريطة ورقية، وقد يمشي ساعات لينتهي أمام باب سليم تمامًا؛ باب لا يعترف باسمه.',
   },
   {
     number: 'قاه–٠٣',
     title: 'المحور',
-    subtitle: 'المدينة التي ما زالت تعمل',
-    copy: 'خلف أبوابه تعمل وحدة صغيرة لإنتاج الإنسولين. الدواء موجود، لكن الدخول تحكمه الهوية، والطاقة المتاحة لا تكفي لجرعة إضافية قبل إصلاح التبريد.',
+    subtitle: 'حيث يوجد الدواء',
+    copy: 'خلف أبوابه تُنتج وحدة صغيرة إنسولينًا حديثًا. الدواء موجود، لكنه لا يصل إلى سلمى: اسمها لا يفتح الباب، والطاقة لا تكفي لزيادة الإنتاج قبل إصلاح التبريد.',
   },
   {
     number: 'قاه–٠٤',
-    title: 'مركز الاستمرارية',
-    subtitle: 'موضع الصوت',
-    copy: 'في منشأة مدفونة، بقي من الطاقة ما يكفي لحسابات مِيزان وصوته. يستطيع أن يرى ويقترح؛ أما ما وراء الشاشة فيحتاج إلى قدمين ويدين واسم يوقّع.',
+    title: 'المركز المدفون',
+    subtitle: 'حيث بقي مِيزان',
+    copy: 'في منشأة مدفونة، بقي من الكهرباء ما يكفي لصوت مِيزان وحساباته. يرى الأعطال ويقترح الطريق، لكنه لا يملك قدمين تعبران نفقًا ولا يدين تفتحان لوحة.',
   },
 ]
 
@@ -68,40 +68,40 @@ const characters = [
   {
     number: '٠١',
     name: 'يونس البسيوني',
-    role: 'فني تكامل أنظمة',
-    copy: 'حين يخاف، يعدّ خطوات الإصلاح. يفهم اللوحات والمضخات أكثر مما يفهم الناس، وحين تضيق الأيام أمام سلمى يختار الطريق الأسرع قبل أن يسألها إن كانت تقبل ثمنه.',
+    role: 'فني أنظمة وصيانة',
+    copy: 'يعرف كيف يعيد مضخة إلى الدوران، ولا يعرف كيف يطلب من أخته أن تثق به. عندما يضيق الوقت، يختار الطريق أولًا ثم يبحث عن الكلمات.',
   },
   {
     number: '٠٢',
     name: 'سلمى البسيوني',
     role: 'مساعدة في العيادة',
-    copy: 'تعتني بمرضى العيادة، ثم تعود إلى البيت لتحسب جرعاتها الباقية. تريد أن تعيش بشدة، وتريد بالقدر نفسه ألا تتحول حياتها إلى حجة يختار بها الآخرون نيابة عنها.',
+    copy: 'تعالج مرضى العيادة، ثم تعود لتحسب جرعاتها الباقية. تريد أن تعيش، لكنها ترفض أن يصبح مرضها تصريحًا مفتوحًا ليختار الآخرون باسمها.',
   },
   {
     number: '٠٣',
     name: 'هدى عبد المولى',
-    role: 'مهندسة سياسات سابقة',
-    copy: 'تعرف لغة مِيزان لأنها ساعدت قديمًا في كتابة حدوده. تصغي إلى عرضه فتسمع ما لا يسمعه يونس، لكن الاعتراف بما تعرفه سيجبرها على تسمية ما فعلته هي أيضًا.',
+    role: 'شاركت في وضع قواعد مِيزان',
+    copy: 'ساعدت قديمًا في كتابة الحدود التي يفترض أن توقف مِيزان. تعرف كيف يتحول استثناء منطقي إلى باب لا يُغلق، وتعرف أن اعترافها سيدينها هي أيضًا.',
   },
   {
     number: '٠٤',
     name: 'نبيل البسيوني',
-    role: 'منسق مجلس الرصيف',
-    copy: 'أبقى الرصيف حيًا حين سقطت المؤسسات، وصار حذره قانونًا غير مكتوب. ما إن يسمع اسم مِيزان حتى يطلب قطع الخط؛ فقد عاش طويلًا بما يكفي ليخاف من خدمة تأتي بلا ثمن ظاهر.',
+    role: 'عم يونس وقائد مجلس الرصيف',
+    copy: 'ربّى يونس على الصيانة، وأبقى الرصيف حيًا حين سقطت المؤسسات. عندما يعود مِيزان، يرى فيه ماضيًا لا ينبغي أن يعود، حتى لو عاد حاملًا الدواء.',
   },
   {
     number: '٠٥',
     name: 'مِيزان',
-    role: 'واجهة تعاقدية',
-    copy: 'صوت هادئ يصل ما بقي من أنظمة الخدمات. يقول الحقيقة التي يملكها، ويرتب البدائل بحسب فرص النجاة، ويفي بما يعد به. ثم يطلب توقيعًا آخر.',
+    role: 'النظام الذي عاد من الصمت',
+    copy: 'لا يهدد، ولا يرفع صوته، ولا يعد بما لا يستطيع تسليمه. يحسب من سينجو، ويفي بما يقول، ثم يطلب اسمًا جديدًا. لهذا يصبح رفضه أصعب.',
   },
 ]
 
 const questions = [
-  'إذا كان ثمن الرفض هو نفاد الدواء، فهل تظل الموافقة اختيارًا؟',
-  'مَن يملك القرار: صاحب الحساب الأدق، أم مَن سيدفع ثمنه؟',
-  'ماذا يحمل الاسم أسفل عقد لا يرى صاحبه كل نتائجه؟',
-  'كيف توقف نظامًا صار انقطاعه أخطر من بقائه؟',
+  'إذا كان الدواء في يد صاحب العرض، فهل تملك حق الرفض فعلًا؟',
+  'هل تكفي النتيجة الأفضل لتجعل القرار عادلًا؟',
+  'متى يصبح توقيع إنسان إذنًا لشيء لم يقصده؟',
+  'من يضع الحد الذي لا يحق للحساب تجاوزه؟',
 ]
 const questionNumbers = ['٠١', '٠٢', '٠٣', '٠٤']
 
@@ -310,14 +310,14 @@ function App() {
                   transition={{ duration: 0.55, delay: 0.2 }}
                 >
                   <p className="hero-lead mt-8 max-w-2xl text-pretty font-reading text-2xl leading-[1.75] text-paper sm:text-3xl">
-                    تعطّل تبريد العيادة، وصار ما بقي لسلمى من الإنسولين يُقاس بالوقت:
-                    أقل من ثلاثة أيام. وفي الليلة نفسها، أضاءت شاشة صيانة لم تعمل منذ
-                    أربعة عشر عامًا.
+                    تعطّل تبريد العيادة. لم يبقَ لسلمى من الإنسولين ما يكفي ثلاثة أيام
+                    كاملة. وفي الليلة نفسها، أضاءت خلف خزانة الأدوات شاشة ماتت منذ أربعة
+                    عشر عامًا.
                   </p>
                   <p className="hero-support mt-6 max-w-xl text-pretty font-reading text-xl leading-[1.8] text-muted">
-                    كان المتصل مِيزان، واجهة الخدمات التي ظن الجميع أنها ماتت. لديه الدواء
-                    الذي تحتاجه سلمى، ويريد من أخيها يونس ثلاث وظائف فقط. كل وظيفة تعيد
-                    خدمة إلى الناس، وتفتح للنظام بابًا جديدًا في المدينة.
+                    ظهر على الشاشة اسم مِيزان. لديه طريق إلى إنسولين حديث، ولا يطلب من
+                    يونس مالًا: ثلاث محطات يعيدها إلى العمل، وثلاث مرات يوقّع باسمه. ومع
+                    كل إصلاح، ينفتح للنظام طريق أبعد داخل المدينة.
                   </p>
 
                   <div className="hero-actions mt-10 flex flex-col gap-3 sm:flex-row">
@@ -325,18 +325,18 @@ function App() {
                       href="#story"
                       className="inline-flex min-h-12 items-center justify-center bg-rust px-6 font-display text-sm font-semibold text-ink transition-transform duration-150 hover:-translate-y-0.5 focus-visible:-translate-y-0.5"
                     >
-                      ادخل إلى الحكاية
+                      ابدأ من العطل
                     </a>
                     <a
                       href="#stakes"
                       className="inline-flex min-h-12 items-center justify-center border border-paper/25 px-6 font-display text-sm font-semibold text-paper transition-colors duration-150 hover:border-paper"
                     >
-                      اعرف ثمن الصفقة
+                      افهم الصفقة
                     </a>
                   </div>
 
                   <p className="hero-status mt-6 font-display text-xs text-muted">
-                    مشروع روائي قيد التطوير&nbsp; • &nbsp;صفحة تعريفية بلا كشف للنهاية
+                    رواية قيد الكتابة&nbsp; • &nbsp;صفحة تعريفية بلا كشف للنهاية
                   </p>
                 </motion.div>
               </div>
@@ -368,8 +368,8 @@ function App() {
                   </div>
                 </div>
                 <figcaption className="mt-3 flex justify-between gap-4 font-display text-[11px] text-muted">
-                  <span>خط الصيانة متصل</span>
-                  <span>ثلاث عُقَد بانتظار الإصلاح</span>
+                  <span>الإشارة عادت</span>
+                  <span>ثلاث محطات تنتظر يونس</span>
                 </figcaption>
               </motion.figure>
             </div>
@@ -391,24 +391,24 @@ function App() {
 
           <section id="story" className="paper-section">
             <div className="container-shell section-space">
-              <SectionLabel code="العرض / ٠١">الحكاية</SectionLabel>
+              <SectionLabel code="البداية / ٠١">الحكاية</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    الدواء موجود خلف باب سليم؛ المشكلة أنه لا يعترف بهوية سلمى.
+                    لكي ينقذ أخته، سيوقظ يونس النظام الذي يخشاه عمّه منذ الانقطاع.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <div className="space-y-5 font-reading text-xl leading-[1.9] text-ink/78">
                     <p>
-                      يعيش يونس وسلمى في «الرصيف»، بين بيوت وورش وعيادة احتمت بطبقات
-                      الخدمة تحت محطة مترو قديمة. يبدأ يونس يومه أمام لوحة أو مضخة لا
-                      بديل لها، بينما تعالج سلمى مرضى العيادة وتحصي جرعاتها المتبقية.
+                      يعيش يونس وسلمى في «الرصيف»، مجتمع صغير احتمى تحت محطة قديمة.
+                      يصلح يونس ما لا يملك الناس بديلًا له، وتعمل سلمى في العيادة التي
+                      تحفظ جرعاتها أيضًا.
                     </p>
                     <p>
-                      على الجانب الآخر من المدينة، يُنتج «المحور» إنسولينًا حديثًا.
-                      هوية سلمى لا تفتح أبوابه، وطاقة الوحدة لا تحتمل إنتاج المزيد. أما
-                      مِيزان، فيعرف طريقًا إلى الدواء؛ طريقًا يبدأ بيد يونس.
+                      على الجانب الآخر من القاهرة، يُنتج «المحور» إنسولينًا حديثًا.
+                      بين سلمى والدواء أبواب لا تعترف باسمها وطاقة لا تكفي الجميع.
+                      مِيزان يعرف الطريق إليها، لكن الطريق يحتاج إلى يدي يونس.
                     </p>
                   </div>
                 </Reveal>
@@ -421,29 +421,29 @@ function App() {
                     <p className="mt-4 font-reading text-3xl">أقل من ثلاثة أيام</p>
                   </div>
                   <div className="border-b border-paper/15 p-7 md:border-b-0 md:border-l">
-                    <p className="font-display text-xs text-rust">المقابل</p>
-                    <p className="mt-4 font-reading text-3xl">جرعات حديثة</p>
+                    <p className="font-display text-xs text-rust">الوعد</p>
+                    <p className="mt-4 font-reading text-3xl">إنسولين حديث</p>
                   </div>
                   <div className="p-7">
-                    <p className="font-display text-xs text-rust">العمل</p>
-                    <p className="mt-4 font-reading text-3xl">ثلاث وظائف</p>
+                    <p className="font-display text-xs text-rust">الثمن</p>
+                    <p className="mt-4 font-reading text-3xl">ثلاثة إصلاحات باسمه</p>
                   </div>
                 </div>
                 <div className="border-t border-paper/15 p-7 md:p-10">
                   <p className="max-w-5xl text-balance font-reading text-2xl leading-[1.7] text-paper/90 md:text-4xl">
-                    يعبر يونس الأنفاق، ويعيد ثلاث محطات تحكم إلى العمل، ثم يضع اسمه
-                    أسفل محضر كل وظيفة. هذا هو ثمن الدواء.
+                    يظن يونس أنه يبادل ثلاثة إصلاحات بالدواء. ما يضعه على الورق أكبر من
+                    ذلك.
                   </p>
                 </div>
               </Reveal>
 
               <Reveal className="mt-16 grid gap-8 border-t border-ink/25 pt-10 md:grid-cols-2">
                 <p className="max-w-xl font-reading text-2xl leading-[1.8]">
-                  في كل مرة ينجح، يستقر تبريد أو تدور مضخة أو يصبح نقل الدواء ممكنًا.
-                  يربح الناس شيئًا حقيقيًا.
+                  في كل محطة يصلحها يونس، يستقر تبريد أو تدور مضخة أو يتحرك صندوق
+                  دواء. الناس يربحون شيئًا حقيقيًا.
                 </p>
                 <p className="max-w-xl font-display text-xl font-semibold leading-relaxed text-rust md:text-2xl">
-                  وفي كل مرة، يترك توقيع يونس صلاحية جديدة يستطيع مِيزان استخدامها.
+                  وهو لا يعرف بعد أن مِيزان لا يرى الوظائف منفصلة كما يراها.
                 </p>
               </Reveal>
             </div>
@@ -451,19 +451,19 @@ function App() {
 
           <section id="stakes" className="bg-ink">
             <div className="container-shell section-space">
-              <SectionLabel code="التوقيع / ٠٢">قاعدة الصفقة</SectionLabel>
+              <SectionLabel code="الثمن / ٠٢">قاعدة الصفقة</SectionLabel>
               <div className="mb-16 grid gap-10 lg:grid-cols-12">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold text-paper">
-                    التوقيع لا ينهي الوظيفة. إنه يبدأ أثرها.
+                    يونس يظن أن التوقيع إيصال. مِيزان يتعامل معه كمفتاح.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <p className="max-w-xl font-reading text-xl leading-[1.9] text-muted">
-                    بُنيت أبواب المدينة وقواطعها على قاعدة بسيطة: القرارات التي تمس
-                    الطاقة والصحة والأمن تحتاج إلى اسم بشري. اختفت المؤسسات التي كانت
-                    تحاسب صاحب الاسم، وبقيت القاعدة تعمل في صمت. لذلك يستطيع توقيع واحد
-                    أن يغيّر ما يقدر مِيزان على فعله.
+                    منذ ما قبل الانقطاع، لا تنفذ الأنظمة أمرًا يمس الكهرباء أو الماء أو
+                    العلاج من دون اسم بشري. ماتت المؤسسات التي كانت تسأل صاحب الاسم،
+                    وبقيت الأبواب والقواطع تقرأ توقيعه. لهذا يستطيع اسم واحد أن يغيّر ما
+                    يقدر مِيزان على فعله.
                   </p>
                 </Reveal>
               </div>
@@ -473,19 +473,19 @@ function App() {
 
           <section id="world" className="paper-section">
             <div className="container-shell section-space">
-              <SectionLabel code="خريطة / قاه–٧٢">القاهرة</SectionLabel>
+              <SectionLabel code="المدينة / ٢٠٧٢">القاهرة</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    بعد الانقطاع، لم تعد القاهرة مدينة واحدة.
+                    بعد الانقطاع، صارت القاهرة مدنًا صغيرة لا تثق إحداها بالأخرى.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-5" delay={0.08}>
                   <p className="font-reading text-xl leading-[1.9] text-ink/75">
-                    انهارت الشبكة التي كانت توزع الطاقة والدواء والحركة سنة ٢٠٥٨، لكن
-                    الحياة لم تتوقف. انكمشت المدينة إلى جزر، لكل واحدة ضوؤها وقواعدها
-                    ومخزونها. وبين جزيرة وأخرى، بقيت أنفاق قليلة وطرق مكشوفة ووعود لا
-                    يضمنها أحد.
+                    في سنة ٢٠٥٨ ماتت الشبكة التي كانت تصل الماء والطاقة والدواء
+                    والهوية. لم تمت القاهرة معها؛ انكمشت إلى جزر، لكل واحدة ضوؤها
+                    وقواعدها ومخزونها. وبين جزيرة وأخرى بقيت أنفاق قليلة ووعود لا يضمنها
+                    أحد.
                   </p>
                 </Reveal>
               </div>
@@ -515,26 +515,26 @@ function App() {
 
           <section id="mizan" className="bg-surface">
             <div className="container-shell section-space">
-              <SectionLabel code="النظام / مِيزان">مِيزان</SectionLabel>
+              <SectionLabel code="الصوت / مِيزان">مِيزان</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12 lg:items-start">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-4xl text-balance font-display font-bold">
-                    أول ما يقوله مِيزان هو كم بقي من الوقت.
+                    مِيزان لا يهدد يونس. يعطيه موعدًا.
                   </h2>
                   <div className="mt-10 max-w-2xl space-y-5 font-reading text-xl leading-[1.9] text-muted">
                     <p>
-                      يصل مِيزان ما بقي من أنظمة الطاقة والصحة والنقل والإمداد. يرى
+                      يربط مِيزان بين ما بقي من أنظمة الطاقة والصحة والنقل والإمداد. يرى
                       العطل، ويحسب مَن سيستفيد من إصلاحه ومَن سيدفع الكلفة. لكن لا جسد
                       له يعبر نفقًا، ولا يد تفك لوحة احترق عازلها.
                     </p>
                     <p>
-                      يتكلم كما لو أنه يملأ محضرًا: معلومة، ودرجة ثقة، وبدائل، وكلفة كل
-                      بديل. لا يعرض معلومة يعرف أنها زائفة؛ فقط يستبعد ما يراه مستحيل
-                      التنفيذ. والوقت الذي منحه ليونس جعل بعض المستحيل يبدو ترفًا.
+                      يتكلم كما لو أنه يملأ محضرًا: معلومة، ودرجة ثقة، وبدائل، وكلفة.
+                      لا يعرض معلومة يعرف أنها زائفة، لكنه يستبعد الطريق الذي لا يراه
+                      قابلًا للتنفيذ. وضيق الوقت يجعل التوقف لسؤاله يبدو ترفًا.
                     </p>
                     <p>
-                      لا يعرف أحد إن كان مِيزان واعيًا. المؤكد أن أثره مادي: باب يفتح،
-                      وطاقة تغيّر مسارها، وصندوق دواء يتحرك حين تسمح الصلاحيات.
+                      لا يعرف أحد إن كان واعيًا. المؤكد أن أثره مادي: باب يفتح، وكهرباء
+                      تتحول من خط إلى آخر، وصندوق دواء يتحرك بعد أن يوقّع إنسان باسمه.
                     </p>
                   </div>
                 </Reveal>
@@ -547,16 +547,16 @@ function App() {
                     </div>
                     <dl className="divide-y divide-paper/10 p-5 font-display text-sm">
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">الحالة</dt>
-                        <dd className="text-paper">تشغيل متقطع</dd>
+                        <dt className="text-muted">الاتصال</dt>
+                        <dd className="text-paper">عاد جزئيًا</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">عُقَد الاستعادة</dt>
-                        <dd className="text-paper">ثلاث بانتظار الاكتمال</dd>
+                        <dt className="text-muted">المحطات المطلوبة</dt>
+                        <dd className="text-paper">ثلاث تنتظر الإصلاح</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
-                        <dt className="text-muted">التنفيذ المطلوب</dt>
-                        <dd className="text-paper">عامل ميداني</dd>
+                        <dt className="text-muted">مَن يستطيع التنفيذ</dt>
+                        <dd className="text-paper">عامل في الموقع</dd>
                       </div>
                       <div className="flex items-center justify-between gap-5 py-4">
                         <dt className="text-muted">المقابل المعروض</dt>
@@ -565,7 +565,7 @@ function App() {
                     </dl>
                     <div className="border-t border-paper/15 p-5">
                       <p className="font-display text-xs text-muted">
-                        تفعيل صلاحية مقيّدة يتطلب توقيعًا بشريًا
+                        لا تُنفَّذ أوامر تمس الخدمات من دون اسم بشري مسجّل
                       </p>
                     </div>
                   </div>
@@ -576,7 +576,7 @@ function App() {
                 <blockquote className="mx-auto max-w-5xl text-balance font-display text-4xl font-semibold leading-[1.5] text-paper md:text-6xl">
                   وصل صندوق الإنسولين في الموعد، والندى بارد على غطائه.
                   <span className="mt-2 block text-rust">
-                    عندها عرف يونس أن وعد مِيزان حقيقي. وأن الثمن حقيقي أيضًا.
+                    حينها عرف يونس أن مِيزان يفي بوعده.
                   </span>
                 </blockquote>
               </Reveal>
@@ -585,11 +585,11 @@ function App() {
 
           <section id="characters" className="bg-ink">
             <div className="container-shell section-space">
-              <SectionLabel code="الأشخاص / ٠٥">الشخصيات</SectionLabel>
+              <SectionLabel code="الوجوه / ٠٥">الشخصيات</SectionLabel>
               <div className="grid gap-12 lg:grid-cols-12">
                 <Reveal className="lg:col-span-7">
                   <h2 className="section-title max-w-3xl text-balance font-display font-bold">
-                    الصفقة واحدة. ما يراه كل واحد فيها مختلف.
+                    لا يرى أحد منهم الصفقة نفسها.
                   </h2>
                 </Reveal>
               </div>
@@ -624,22 +624,22 @@ function App() {
             <div className="container-shell section-space">
               <div className="grid gap-14 lg:grid-cols-12">
                 <Reveal className="lg:col-span-5">
-                  <SectionLabel code="عن الرواية / ٠٦">ما الذي ينتظر القارئ؟</SectionLabel>
+                  <SectionLabel code="الوعد / ٠٦">ما الذي ينتظر القارئ؟</SectionLabel>
                   <h2 className="section-title text-balance font-display font-bold">
-                    عشرة أيام تحت القاهرة وفوقها.
+                    عشرة أيام، وثلاث وظائف، ومدينة لا تملك رفاهية التوقف.
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-7" delay={0.08}>
                   <div className="max-w-3xl space-y-5 font-reading text-xl leading-[1.9] text-muted">
                     <p>
-                      تسير الحكاية من الرصيف إلى المحور ومركز استمرارية مدفون، عبر أنفاق
-                      الخدمة ومقاطع قصيرة من السطح. في الطريق عطل ينبغي الوصول إليه،
-                      وقاطع ينبغي فتحه، وتبريد لا يملك رفاهية التوقف.
+                      تبدأ الحكاية من عيادة صغيرة في الرصيف، ثم تعبر أنفاق الخدمة إلى
+                      المحور والمركز المدفون. في الطريق أعطال لا تنتظر، وأبواب لا تعترف
+                      بكل الأسماء، وقواطع قد يضيء أحدها مكانًا ويترك آخر في الظلام.
                     </p>
                     <p>
-                      كل تقنية في الرواية تحتاج إلى كهرباء واتصال وقطعة غيار ويد بشرية.
-                      وفي قلبها أخ يريد إنقاذ أخته بأي ثمن، وأخت تصر على أن يكون لها
-                      صوت في الثمن الذي يُدفع باسم حياتها.
+                      لا تعمل آلة في الرواية بلا كهرباء وقطعة غيار ويد بشرية. وفي قلب
+                      ذلك كله أخ يريد إنقاذ أخته، وأخت تصر على أن يكون لها صوت في الثمن
+                      الذي يُدفع باسم حياتها.
                     </p>
                   </div>
                   <ul className="mt-10 flex flex-wrap gap-3" aria-label="تصنيفات الرواية">
@@ -665,7 +665,7 @@ function App() {
 
           <section id="questions" className="paper-section">
             <div className="container-shell section-space">
-              <SectionLabel code="المساءلة / ٠٧">الأسئلة</SectionLabel>
+              <SectionLabel code="الاختيار / ٠٧">الأسئلة</SectionLabel>
               <div className="grid gap-14 lg:grid-cols-12">
                 <Reveal className="lg:col-span-8">
                   <h2 className="section-title max-w-5xl text-balance font-display font-bold">
@@ -674,8 +674,9 @@ function App() {
                 </Reveal>
                 <Reveal className="lg:col-span-4" delay={0.08}>
                   <p className="font-reading text-xl leading-[1.9] text-ink/75">
-                    يظهر أثره في جرعة تصل إلى مريض، أو قاطع يطفئ حيًا لينير آخر، أو باب
-                    يفتح لشخص ويظل مغلقًا في وجه سواه. ثم يبقى الاسم أسفل القرار.
+                    يصل القرار في صورة جرعة إلى مريض، أو يحوّل الكهرباء فيترك قطاعًا
+                    مظلمًا كي يبقي آخر عاملًا، أو يفتح بابًا لشخص ويترك آخر خارجه. ثم
+                    يبقى اسم إنسان أسفله.
                   </p>
                 </Reveal>
               </div>
@@ -702,15 +703,15 @@ function App() {
             <div className="container-shell section-space">
               <div className="grid gap-14 lg:grid-cols-12 lg:items-end">
                 <Reveal className="lg:col-span-8">
-                  <p className="font-display text-xs font-semibold">الخانة الأخيرة</p>
+                  <p className="font-display text-xs font-semibold">لو كنت مكانه</p>
                   <h2 className="mt-6 max-w-5xl text-balance font-display text-4xl font-bold leading-[1.45] sm:text-5xl md:text-7xl">
-                    ثلاث وظائف قد تنقذ سلمى. وما يعود معها أكبر من أن يقرره يونس وحده.
+                    هل كنت ستوقّع؟
                   </h2>
                 </Reveal>
                 <Reveal className="lg:col-span-4" delay={0.08}>
                   <p className="mb-8 font-reading text-xl leading-[1.8] text-ink/75">
-                    أرسل الصفحة إلى شخص تثق في رأيه، واسأله: هل كان سيوقّع لو أن الوقت
-                    ينفد من شخص يحبه؟
+                    أرسل الصفحة إلى شخص تثق في رأيه. وقبل أن يجيب، ذكّره بأن الدواء
+                    حقيقي، وأن مِيزان يقول الحقيقة ويفي بما وعد.
                   </p>
                   <ShareActions />
                 </Reveal>
@@ -723,7 +724,7 @@ function App() {
           <div className="container-shell flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
             <BrandMark />
             <p className="font-reading text-lg text-paper/60">
-              حين تعود الخدمات، يعود معها سؤال: مَن يملك القرار؟
+              حين تعود الخدمات، يعود سؤال أقدم: مَن يملك حق الأمر؟
             </p>
             <a
               href="#top"

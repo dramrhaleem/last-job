@@ -70,13 +70,13 @@ export function AuthorityLine({ steps }: AuthorityLineProps) {
               </h3>
               <dl className="mt-8 space-y-6">
                 <div>
-                  <dt className="font-display text-xs text-muted">الأثر المباشر</dt>
+                  <dt className="font-display text-xs text-muted">ما يحدث فورًا</dt>
                   <dd className="mt-2 font-reading text-xl leading-relaxed text-paper">
                     {step.effect}
                   </dd>
                 </div>
                 <div className="border-r-2 border-rust pr-4">
-                  <dt className="font-display text-xs text-muted">ما يعنيه</dt>
+                  <dt className="font-display text-xs text-muted">ما يتركه وراءه</dt>
                   <dd className="mt-2 font-reading text-lg leading-relaxed text-paper/85">
                     {step.meaning}
                   </dd>
