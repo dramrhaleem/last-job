@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const shareTitle = 'آخر وظيفة — رواية من القاهرة ٢٠٧٢'
 const shareText =
-  'تعطّل تبريد العيادة، ولم يبقَ لسلمى إلا أيام قليلة. يعرض مِيزان الدواء على يونس مقابل ثلاث وظائف صيانة.'
+  'أقل من ثلاثة أيام قبل أن ينفد دواء سلمى. لدى مِيزان ما ينقذها، وثمنه ثلاث وظائف يوقّعها يونس باسمه.'
 
 export function ShareActions() {
   const [status, setStatus] = useState('')
